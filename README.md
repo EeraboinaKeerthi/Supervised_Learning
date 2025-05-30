@@ -31,7 +31,7 @@ As the classifier learns from the labeled data, we call this the training data.
 
 The idea of k-Nearest Neighbors, or KNN, is to predict the label of any data point by looking at the k closest labeled data points and getting them to vote on what label the unlabeled observation should have. KNN uses majority voting, which makes predictions based on what label the majority of nearest neighbors have.
 
-## .values() --> is used to convert the data into numpy arrays 
+# .values() --> is used to convert the data into numpy arrays 
 
 Measuring model performance:
 
@@ -51,4 +51,7 @@ stratify = y : Using the same number when repeating this step allows us to repro
 input shape should be 2 dimensional, then only it is accepted by scikit learn. 
 to convert to 2 dimensional we use  X.reshape(-1,1)
 target can be one dimensional 
+
+**Linear Regression:**
+
 
