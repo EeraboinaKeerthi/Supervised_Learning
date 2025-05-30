@@ -33,3 +33,17 @@ The idea of k-Nearest Neighbors, or KNN, is to predict the label of any data poi
 
 ## .values() --> is used to convert the data into numpy arrays 
 
+Measuring model performance:
+
+**Accuracy**  is the number of correct predictions divided by the total number of observations.
+
+Train test split: 
+
+x_train , x_test, y_train, y_test = train_test_split( x, y, test_size = 0.3, random_state = 21, stratify = y)
+
+The random_state argument sets a seed for a random number generator that splits the data. 
+
+stratify = y : Using the same number when repeating this step allows us to reproduce the exact split and our downstream results. It is best practice to ensure our split reflects the proportion of labels in our data. So if churn occurs in 10% of observations, we want 10% of labels in our training and test sets to represent churn. We achieve this by setting stratify equal to y.
+
+
+
