@@ -46,4 +46,9 @@ The random_state argument sets a seed for a random number generator that splits 
 stratify = y : Using the same number when repeating this step allows us to reproduce the exact split and our downstream results. It is best practice to ensure our split reflects the proportion of labels in our data. So if churn occurs in 10% of observations, we want 10% of labels in our training and test sets to represent churn. We achieve this by setting stratify equal to y.
 
 
+**Regression:**
+
+input shape should be 2 dimensional, then only it is accepted by scikit learn. 
+to convert to 2 dimensional we use  X.reshape(-1,1)
+target can be one dimensional 
 
